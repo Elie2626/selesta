@@ -182,7 +182,7 @@
 
 <!-- HERO -->
 <div class="page-hero">
-  <div class="page-hero-bg" style="background-image:url('ravalement-chantier-piscine.png'); background-position: center 40%; opacity:.6;"></div>
+  <div class="page-hero-bg" style="background-image:url('ravalement-chantier-piscine.webp'); background-position: center 40%; opacity:.6;"></div>
   <div class="page-hero-content">
     <p class="breadcrumb"><a href="index.html">Accueil</a> &rsaquo; <a href="#">Nos services</a> &rsaquo; Ravalement de façade</p>
     <h1>Ravalement<br>de Façade</h1>
@@ -210,7 +210,7 @@
         <a href="contact.html" class="btn-gold" style="margin-top:36px;">Demander un devis gratuit</a>
       </div>
       <div class="split-img">
-        <img src="real-venissieux-apres.png" alt="Ravalement de façade après travaux – Vénissieux" loading="lazy" />
+        <img src="real-venissieux-apres.webp" alt="Ravalement de façade après travaux – Vénissieux" loading="lazy" />
       </div>
     </div>
   </div>
@@ -315,22 +315,22 @@
     </div>
     <div class="sliders-grid">
       <div class="slider-item">
-        <div class="cs-wrap" data-before="real-venissieux-avant.jpg" data-after="real-venissieux-apres.png"></div>
+        <div class="cs-wrap" data-before="real-venissieux-avant.webp" data-after="real-venissieux-apres.webp"></div>
         <div class="slider-label">Maison individuelle – Vénissieux (69)</div>
         <div class="slider-sublabel">Ravalement complet + reprise maçonnerie</div>
       </div>
       <div class="slider-item">
-        <div class="cs-wrap" data-before="real-lyon8-badigeon-avant.png" data-after="real-lyon8-badigeon-apres.png"></div>
+        <div class="cs-wrap" data-before="real-lyon8-badigeon-avant.webp" data-after="real-lyon8-badigeon-apres.webp"></div>
         <div class="slider-label">Immeuble collectif – Lyon 8<sup>e</sup></div>
         <div class="slider-sublabel">Badigeon de chaux sur façade ancienne</div>
       </div>
       <div class="slider-item">
-        <div class="cs-wrap" data-before="real-lyon3-avant.png" data-after="real-lyon3-apres.png"></div>
+        <div class="cs-wrap" data-before="real-lyon3-avant.webp" data-after="real-lyon3-apres.webp"></div>
         <div class="slider-label">Immeuble – Lyon 3<sup>e</sup> / Lyon 6<sup>e</sup></div>
         <div class="slider-sublabel">Peinture imperméabilisante haute durabilité</div>
       </div>
       <div class="slider-item">
-        <div class="cs-wrap" data-before="real-lyon2-avant.png" data-after="real-lyon2-apres.png"></div>
+        <div class="cs-wrap" data-before="real-lyon2-avant.webp" data-after="real-lyon2-apres.webp"></div>
         <div class="slider-label">Immeuble – Lyon 2<sup>e</sup></div>
         <div class="slider-sublabel">Ravalement finition badigeon de lait de chaux</div>
       </div>
@@ -377,9 +377,9 @@ document.querySelectorAll('.nav-links > li > a').forEach(function(a){if(a.nextEl
     const before = el.dataset.before, after = el.dataset.after;
     let pos = 50, drag = false;
     el.innerHTML = `
-      <img src="${before}" alt="Avant" draggable="false" style="display:block;width:100%;height:100%;object-fit:cover;">
+      <img loading="lazy" decoding="async" src="${before}" alt="Avant" draggable="false" style="display:block;width:100%;height:100%;object-fit:cover;">
       <div class="cs-after" style="position:absolute;inset:0;overflow:hidden;clip-path:inset(0 0 0 50%)">
-        <img src="${after}" alt="Après" draggable="false" style="width:100%;height:100%;object-fit:cover;">
+        <img loading="lazy" decoding="async" src="${after}" alt="Après" draggable="false" style="width:100%;height:100%;object-fit:cover;">
       </div>
       <div class="cs-line" style="position:absolute;top:0;bottom:0;left:calc(50% - 1.5px);width:3px;background:rgba(255,255,255,.85);display:flex;align-items:center;justify-content:center;z-index:10;pointer-events:none;">
         <div class="cs-btn" style="width:48px;height:48px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 16px rgba(0,0,0,.35);pointer-events:all;cursor:ew-resize;flex-shrink:0;">
